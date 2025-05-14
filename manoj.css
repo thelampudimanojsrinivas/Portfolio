@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Playfair+Display:ital,wght@1,600&display=swap');
+
+.logo {
+    color: rgb(248, 241, 239);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo .highlight {
+    color: saddlebrown;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: sens-serlf;
+    box-sizing :border;
+}
+body{
+    background-color:rgb(21, 16, 6);
+    color:rgb(15, 11, 11);
+
+}
+#header{
+    width: 100%;
+    height: 130vh;
+    background-image: url("manoj.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+    
+    
+}
+.logo {
+    color: rgb(16, 204, 41); /* base color */
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo .highlight {
+    color: rgb(1, 11, 12); /* second color */
+}
+
+
+.container{
+    padding: 0px 10%;
+    padding-right: 10px;
+
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(15, 10, 9);
+    text-decoration: none;
+    font-size: 25px;
+    position:relative;
+}
+
+nav ul li a::after{
+    content: home;
+    width: 0%;
+    height: 4px;
+    background: #f66504;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff7f50;
+
+}
+.resume-btn {
+    background-color: #ce7539;
+    color: white;
+    padding:10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+
+<!-------------about---------->
+
+
+.about {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+ 
+    
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+    gap: 40px; /* Optional spacing between image and text */
+}
+
+.about-col-1 {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-col-1 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 150px;
+     padding: 25px;
+  
+}
+
+.about-col-2 {
+    flex: 2;
+    display:100%;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+   
+    
+}
+button{
+    background-color: #09b1f4;
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transform: .4s;
+
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #0a0204;
+    cursor: pointer;
+}
+.projects {
+    background: #111;
+    color: white;
+    padding: 60px 10%;
+}
+
+.projects .title h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #04b1f6;
+    text-transform: uppercase;
+    
+}
+
+.project-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    background:#0a0204;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    background: #04c6f6;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background: #50cdff;
+}
+/* Skills Section */
+.section {
+    background: #0c0a09;
+    padding: 100px 10%;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Optional: adds spacing between cells */
+}
+
+.skills-section .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px; /* Optional: gives cells a square shape */
+    padding: 10px 20px;
+    border: 1.5px solid #0d0805;
+    border-radius: 10px;
+    background-color: #1a1817; /* Optional: distinguish cells from background */
+}
+
+.skills-section .cell img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+
+
+.service{
+     background: #101010;
+     width: 100%;
+     padding: 100px 0px;
+  
+
+}
+.title h2{
+    color: aliceblue;
+    font-size: 55px;
+    width: 280px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 325px;
+    width: 305px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #04d2f6;
+
+}
+h4{
+    color: aliceblue;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+.pra p{
+    color:#fcfc;
+    font-size:16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+.card .button{
+    background-color: #06b8fe;
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 30px;
+    transform: .4s;
+}
+.card .button:hover{
+
+    background-color: transparent;
+    border: 2px solid #0f0b03;
+    cursor: pointer;
+
+}
+
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #5b3228;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button{
+    background-color: #0a0204;
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transform: .4s;
+}
+.contact-me .button:hover{
+    background-color: rgb(255, 187, 0)
+    border: 2px solid #f66504;
+    cursor: pointer;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 20px;
+    color:rgb(229, 221, 221);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: rgb(20, 21, 22);
+    font-size: 17px;
+    width: 400px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
